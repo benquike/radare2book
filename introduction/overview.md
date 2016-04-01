@@ -6,7 +6,7 @@ The Radare2 project is a set of small command-line utilities that can be used to
 
 The core of the hexadecimal editor and debugger. radare2 allows you to open a number of input/output sources as if they were simple, plain files, including disks, network connections, kernel drivers, processes under debugging, and so on.
 
-It implements an advanced command line interface for moving around a file, analyzing data, disassembling, binary patching, data comparison, searching, replacing, visualizing. It can be scripted with a variety of languages, including Ruby, Python, Lua, and Perl.
+It implements an advanced command line interface for moving around in a file, analyzing data, disassembling, binary patching, data comparison, searching, replacing, visualizing. It can be scripted with a variety of languages, including Ruby, Python, Lua, and Perl.
 
 ### rabin2
 
@@ -30,9 +30,11 @@ A command line assembler and disassembler for multiple architectures (including 
     $ echo 'push eax;nop;nop' | rasm2 -f -
     509090
 
+
 ### rahash2
 
-An implementation of a block-based hash tool. From small text strings to large disks, rahash2 supports multiple algorithms, including MD4, MD5, CRC16, CRC32, SHA1, SHA256, SHA384, SHA512, par, xor, xorpair, mod255, hamdist, or entropy.
+An implementation of a block-based hash tool. From small text strings to large disks, rahash2 supports multiple algorithms, including MD4, MD5, CRC16, CRC32, SHA1, SHA256, SHA384, SHA512, par, xor, xorpair, mod255, hamdist, or entropy. Using `-a` option, you can choose the hashing algorithm to use.
+
 rahash2 can be used to check the integrity of, or track changes to, big files, memory dumps, and disks.
 
 ### Examples

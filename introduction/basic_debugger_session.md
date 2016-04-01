@@ -37,3 +37,7 @@ In visual mode you can enter regular radare commands by prepending them with `:`
 To get help on visual mode, press `?`. To scroll help screen, use arrows. To exit help view, press `q`.
 
 A frequently used command is `dr`, to read or write values of target's general purpose registers. You can also manipulate the hardware and extended/floating point registers.
+
+### Questions
+1. How to map a new file to standard input/output/error?
+2. How to set conditional breakpoints?

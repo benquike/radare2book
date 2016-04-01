@@ -46,11 +46,20 @@ You can also use variables and seek positions to build complex expressions. Avai
     $f            ; jump fail address (e.g. jz 0x10 => next instruction)
     $m            ; opcode memory reference (e.g. mov eax,[0x10] => 0x10)
 
-Some more examples:
+> Some more examples:
 
-    [0x4A13B8C0]> :? $m + $l
-    140293837812900 0x7f98b45df4a4 03771426427372244 130658.0G 8b45d000:04a4 140293837812900 10100100 140293837812900.0 -0.000000
+>    [0x4A13B8C0]> :? $m + $l
+>    140293837812900 0x7f98b45df4a4 03771426427372244 130658.0G 8b45d000:04a4 140293837812900 10100100 140293837812900.0 -0.000000
 
 
-    [0x4A13B8C0]> :pd 1 @ +$l
-    0x4A13B8C2   call 0x4a13c000
+>    [0x4A13B8C0]> :pd 1 @ +$l
+>    0x4A13B8C2   call 0x4a13c000
+
+### Questions
+1. What can be used to build an expression?
+2. Can we define our variables?
+3. What does each column of the output mean?(especially the last 2 columns)
+
+    134512692 0x8048034 01001100064 128.0M 804000:0034 134512692 00110100 134512692.0 0.000000
+
+4. Where are expressions typically used?
